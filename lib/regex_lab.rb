@@ -27,8 +27,15 @@ end
 
 def valid_phone_number?(phone)
   
+<<<<<<< HEAD
   if phone.match(/[\W]{0,}[\d]{3}[\W]{0,}[\d]{3}[\W]{0,}[\d]{4}/).to_s != phone
     return false
+=======
+  phone.each do |number|
+    if number.match(/[\W]{0,}[\d]{3}[\W]{0,}[\d]{3}[\W]{0,}[\d]{4}/).to_s != number
+      return false
+    end
+>>>>>>> dcbbd99c52a7305bd9e59de006e4f8c3eaf0d134
   end
   
   true
